@@ -12,30 +12,56 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+*,
+*::before
+*::after{
+  box-sizing: border-box;
+}
+
 body{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
   text-align: center;
 }
+.field{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  }
+
+  .select-control{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  }
+
+
 .navigation-link, .contact-form{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
   text-decoration: none;
 
 }
 .main-img{
-  background-color: black;
+  background-color: #000000;
 }
 .main-index{
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -58,26 +84,25 @@ body{
   line-height: 28px;
   text-transform: uppercase;
 }
-.color1{
-  color: white;
-  background-color: #82B3D3
-  ;
+.color-dark{
+  color: #ffffff;
+  background-color: #82b3d3;
 }
-.color2{
-  color: black;
+.color-light{
+  color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
-.color3{
-  color: black;
+.color-medium{
+  color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .newsletter, .newsletter-description{
-  color: white;
+  color: #ffffff;
   }
 .newsteller-background{
-  background-color: black;
-  background-image: url(../images/sign-form-backgroung.jpg);
+  background-color: #000000;
+  background-image: url("../images/sign-form-backgroung.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -88,9 +113,9 @@ body{
   line-height: 40px;
 }
 .filters{
-  color: white;
-  background-color: black;
-  background-image: url(../images/catalog-background.jpg);
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -100,7 +125,7 @@ body{
   line-height: 78px;
 }
 .breadcrumbs-link{
-color: white;
+color: #ffffff;
 text-decoration: none;
 }
 .catalog-filter-title{
@@ -117,7 +142,7 @@ text-decoration: none;
 .hotel-card-link{
   text-align: left;
   text-transform: none;
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 .hotel-type{
@@ -127,20 +152,82 @@ text-decoration: none;
   text-align: right;
 }
 .no-background{
-  color: black;
+  color: #000000;
 }
-.button-main{
-  color: white;
+.button-search, .button-sign{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
   background-color: #756157;
 }
-.button-favorite{
-  color: white;
-  background-color:#82B3D3  ;
+.button-sign{
+  background-color:#82b3d3
 }
+
+
+.button-favorite, .button-apply, .button-in-favorite{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color:#82b3d3;
+}
+.button-in-favorite{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7db54f;
+
+}
+
+.button-desire, .button-more{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color:#756157;
+}
+
+.button-reset{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
 .rating{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  background-color:#f2f2f2;
 
+}
+
+.pagination-link, .pagination-current{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color:#82b3d3;
+}
+.pagination-current{
+  color: #000000;
+  background-color:#f2f2f2;
 }
