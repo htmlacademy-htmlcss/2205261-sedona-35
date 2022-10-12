@@ -7,47 +7,45 @@
   </head>
   <body>
     <header class="header-page">
-      <a href="index.html">
-        <img class="logo" src="images/svg/logo.svg" width="140" height="70"  alt="логотип сайта Седона">
-      </a>
-        <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
-          </li>
+      <nav class="navigation">
+        <a href="index.html">
+          <img class="logo" src="images/svg/logo.svg"  width="140" height="70" alt="логотип сайта Седона">
+        </a>
+       <ul class="navigation-list reset-ul">
+         <li class="navigation-item">
+           <a class="navigation-link" href="index.html">Главная</a>
+         </li>
+         <li class="navigation-item">
+           <a class="navigation-link" href="#">О Седоне</a>
+         </li>
+         <li class="navigation-item">
+           <a class="navigation-link" href="#">Гостиницы</a>
+         </li>
+       </ul>
+       <ul class="navigation-user reset-ul">
+         <li class="navigation-item">
+           <a class="navigation-link" href="#">
+             <span class="visually-hidden">
+               Поиск
+             </span>
+           </a>
+         </li>
+         <li class="navigation-item">
+           <a class="navigation-link" href="#">
+             <span class="visually-hidden">
+               Избранное
+             </span>
+           </a>
+         </li>
+         <li class="navigation-item">
+           <a class="navigation-link button-desire" href="#">
+              Хочу сюда!
+           </a>
+         </li>
         </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-link button-desire" href="#">
-                Хочу сюда!
-            </a>
-          </li>
-         </ul>
-      </nav>
-    </header>
-    <main class="main-catalog">
+     </nav>
+   </header>
+    <main class="main-catalog main-container">
       <section class="filters">
         <h1 class="main-title">Гостиницы Седоны</h1>
          <ol class="breadcrumbs">
@@ -64,7 +62,7 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list reset-ul">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="pool">Бассеин
@@ -85,7 +83,7 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья</legend>
-                <ul class="catalog-filter-list">
+                <ul class="catalog-filter-list reset-ul">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input" type="radio" name="type-of-living" value="hotel">Гостиница
@@ -125,7 +123,7 @@
         <a class="button-list" href="#">
           <span class="visually-hidden">Вид: список</span>
         </a>
-        <ul class="hotel-list">
+        <ul class="hotel-list reset-ul">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-img" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa">
@@ -174,7 +172,7 @@
             <span class="rating">Рейтинг: 5,0</span>
           </li>
         </ul>
-        <ul class="pagination">
+        <ul class="pagination reset-ul">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -196,7 +194,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer-container">
       <section>
         <h2 class="newsletter no-background">Рассылка</h2>
         <p class="newsletter-description no-background">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -206,9 +204,9 @@
           <button class="button-sign" type="submit">Подписаться</button>
         </form>
       </section>
-      <section>
+      <section class="social-info">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
+        <ul class="footer-social-list reset-ul">
           <li class="footer-social-item">
             <a class="button-social" href="https://vk.com/htmlacademy">
               <img class="hotel-card-img" src="images/svg/vk.svg" width="24" height="14" alt="ВК">

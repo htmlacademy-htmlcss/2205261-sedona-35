@@ -7,9 +7,9 @@
   </head>
   <body>
     <header class="header-page">
-      <img class="logo" src="images/svg/logo.svg" width="140" height="70" alt="логотип сайта Седона">
-      <nav class="navigation">
-        <ul class="navigation-list">
+       <nav class="navigation">
+        <img class="logo" src="images/svg/logo.svg" width="140" height="70" alt="логотип сайта Седона">
+        <ul class="navigation-list reset-ul">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
           </li>
@@ -20,7 +20,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-user reset-ul">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
@@ -28,7 +28,6 @@
               </span>
             </a>
           </li>
-
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
@@ -36,7 +35,6 @@
               </span>
             </a>
           </li>
-
           <li class="navigation-item">
             <a class="navigation-link button-desire" href="#">
                Хочу сюда!
@@ -45,12 +43,14 @@
          </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="main-container">
+      <div class="page-container">
       <section class="main-index">
         <h1 class="visually-hidden">
           Гостиницы в городке Седона, Аризона.
         </h1>
-        <img style="main-img" src="images/svg/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+          <img style="main-img" src="images/svg/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">
@@ -61,7 +61,7 @@
               Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
 
-        <ul class="advantages-list">
+        <ul class="advantages-list reset-ul">
           <li class="advantages-item color-dark">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description"> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -90,7 +90,7 @@
         <h2 class="visually-hidden">
           Услуги
         </h2>
-        <ul>
+        <ul class="reset-ul">
           <li class="service-item color-medium">
             <h3 class="service-title">Жильё</h3>
             <p class="service-description"> Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -110,8 +110,10 @@
         <p class="proposal-descpiption">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button-search" type="button"  >Поиск гостинницы в Седоне</button>
       </section>
+      </div>
      </main>
-     <footer>
+
+     <footer class="footer-container">
       <section class="newsteller-background">
         <h2 class="newsletter">Рассылка</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -121,9 +123,9 @@
           <button class="button-sign" type="submit">Подписаться</button>
         </form>
       </section>
-      <section>
+      <section class="social-info">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
+        <ul class="footer-social-list reset-ul">
           <li class="footer-social-item">
             <a class="button-social" href="https://vk.com/htmlacademy">
               <img class="social-img" src="images/svg/vk.svg" width="24" height="14" alt="ВК">

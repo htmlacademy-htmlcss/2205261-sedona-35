@@ -18,16 +18,66 @@
 *::after{
   box-sizing: border-box;
 }
+html{
+  height: 100%;
+}
+html{
+  height: 100%;
+}
 
 body{
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+  }
+.main-container{
+flex-grow: 1;
+}
+
+.reset-ul{
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  width: 1200;
+  margin: 0 auto;
   text-align: center;
 }
+.footer-container{
+  text-align: center;
+}
+
+.main-img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.navigation{
+  width: 1200;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-list{
+  width: 507px;
+ }
+
+.navigation-user{
+  width: 268px;
+  margin-left: auto;
+}
+
+
 .field{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -35,7 +85,7 @@ body{
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
-  }
+}
 
   .select-control{
   font-family: "PT Sans", sans-serif;
@@ -162,6 +212,8 @@ text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
+  padding:8px 50px;
+  border: 0ch;
 }
 .button-sign{
   background-color:#82b3d3
@@ -177,6 +229,7 @@ text-decoration: none;
   text-decoration: none;
   color: #ffffff;
   background-color:#82b3d3;
+  border: 0ch;
 }
 .button-in-favorite{
   font-family: "PT Sans", sans-serif;
@@ -187,6 +240,7 @@ text-decoration: none;
   text-decoration: none;
   color: #ffffff;
   background-color: #7db54f;
+  padding: 8px 18px;
 
 }
 
@@ -200,6 +254,30 @@ text-decoration: none;
   color: #ffffff;
   background-color:#756157;
 }
+
+.button-desire{
+  padding: 8px 34px;
+}
+.button-more{
+  padding: 8px 26px;
+}
+
+.button-favorite{
+  padding: 8px 20px;
+  border: 0;
+}
+.button-apply{
+  padding:8px 50px;
+}
+
+.rating{
+  padding:9px 22px 8px 23px;
+}
+
+.button-reset{
+  padding:8px 58px;
+}
+
 
 .button-reset{
   font-family: "PT Sans", sans-serif;
@@ -230,4 +308,29 @@ text-decoration: none;
 .pagination-current{
   color: #000000;
   background-color:#f2f2f2;
+}
+
+.advantages-item, .service-item{
+  width: 400px;
+}
+.advantages-description, .service-description{
+padding: 85px;
+}
+
+.pagination{
+  display: flex;
+}
+.pagination-link, .pagination-dots{
+  width: 60px;
+  padding: 11px;
+  margin: 8px;
+}
+
+.social-info{
+  display: flex;
+}
+
+.field{
+  width: 452px;
+  padding:14px 20px ;
 }
