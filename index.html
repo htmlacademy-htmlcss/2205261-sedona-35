@@ -21,21 +21,21 @@
           </li>
         </ul>
         <ul class="navigation-user reset-ul">
-          <li class="navigation-item">
+          <li class="navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-user">
             <a class="navigation-link button-desire" href="#">
                Хочу сюда!
             </a>
@@ -50,7 +50,7 @@
         <h1 class="visually-hidden">
           Гостиницы в городке Седона, Аризона.
         </h1>
-          <img style="main-img" src="images/svg/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+        <img style="main-img" src="images/svg/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">
@@ -90,30 +90,26 @@
         <h2 class="visually-hidden">
           Услуги
         </h2>
-        <ul class="reset-ul">
-          <li class="service-item color-medium">
+        <ul class="service-item-list reset-ul">
+          <li class="service-item color-medium house">
             <h3 class="service-title">Жильё</h3>
             <p class="service-description"> Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="service-item">
+          <li class="service-item food">
             <h3 class="service-title">Еда</h3>
             <p class="service-description"> Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="service-item color-medium">
+          <li class="service-item color-medium souvenir">
             <h3 class="service-title">Сувениры</h3>
             <p class="service-description"> Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="proposal-background">
         <h2 class="proposal">Заинтересовались?</h2>
         <p class="proposal-descpiption">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button-search" type="button"  >Поиск гостинницы в Седоне</button>
       </section>
-      </div>
-     </main>
-
-     <footer class="footer-container">
       <section class="newsteller-background">
         <h2 class="newsletter">Рассылка</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -123,7 +119,11 @@
           <button class="button-sign" type="submit">Подписаться</button>
         </form>
       </section>
-      <section class="social-info">
+      </div>
+     </main>
+
+     <footer class="footer-container">
+       <section class="social-info">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list reset-ul">
           <li class="footer-social-item">
@@ -142,12 +142,15 @@
             </a>
           </li>
         </ul>
+      </section>
         <h2 class="visually-hidden">Телефон</h2>
         <address>
           <a class="contact-form" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-      </section>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img class="academy-logo" src="images/svg/html-cademy.svg" width="115" height="33" alt="Сделано в HTML академии">
+        </a>
+
     </footer>
   </body>
 </html>

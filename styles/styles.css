@@ -13,16 +13,23 @@
   font-display: swap;
 }
 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 *,
-*::before
+*::before,
 *::after{
   box-sizing: border-box;
-}
-html{
-  height: 100%;
-}
-html{
-  height: 100%;
+  outline:  2px solid #00ff04;;
 }
 
 body{
@@ -38,12 +45,13 @@ body{
   background-color: #ffffff;
   }
 .main-container{
-flex-grow: 1;
-}
+  flex-grow: 1;
+  }
 
 .reset-ul{
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .page-container {
@@ -55,27 +63,41 @@ flex-grow: 1;
   text-align: center;
 }
 
-.main-img{
-  display: block;
-  margin: 0 auto;
+.logo{
+  margin: 0 44px 0 70px;
+
 }
-
-
-
 .navigation{
   width: 1200;
   display: flex;
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .navigation-list{
   width: 507px;
- }
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.navigation-item{
+  display: block;
+  padding: 20px;
+}
 
 .navigation-user{
-  width: 268px;
+  width: 368px;
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.navigation-item-user{
+  display: block;
+  min-width: 50px;
+  min-height: 22px;
+  padding: 20px;
+}
+
 
 
 .field{
@@ -108,6 +130,11 @@ flex-grow: 1;
 }
 .main-img{
   background-color: #000000;
+  width: 458px;
+  height: 352px;
+  display: block;
+  margin: 0 auto;
+
 }
 .main-index{
   color: #000000;
@@ -115,15 +142,24 @@ flex-grow: 1;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 485px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-bottom: 69px;
 }
 .slogan, .proposal, .newsletter, .offer-title{
-
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-
 }
+.slogan{
+margin-bottom: 25px;
+}
+.reasons{
+  margin-bottom: 90px;
+}
+
 .reasons, .proposal-descpiption, .newsletter-description{
   font-size: 22px;
   line-height: 26px;
@@ -169,6 +205,23 @@ flex-grow: 1;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+.house{
+  background-image: url("../images/svg/house.svg");
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 74px;
+
+  }
+.food{
+  background-image: url("../images/svg/food.svg");
+  background-repeat: no-repeat;
+}
+.souvenir{
+  background-image: url("../images/svg/gift.svg");
+  background-repeat: no-repeat;
+}
+
 .main-title{
   font-weight: 700;
   font-size: 60px;
@@ -201,9 +254,17 @@ text-decoration: none;
 .hotel-price{
   text-align: right;
 }
-.no-background{
-  color: #000000;
+
+.newsteller-background, .no-background{
+  padding: 96px 258px 104px;
 }
+.no-background{
+  background: none;
+  text-align: center;
+ }
+ .black{
+  color: #000000;
+ }
 .button-search, .button-sign{
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -213,7 +274,7 @@ text-decoration: none;
   color: #ffffff;
   background-color: #756157;
   padding:8px 50px;
-  border: 0ch;
+  border: 0;
 }
 .button-sign{
   background-color:#82b3d3
@@ -229,7 +290,7 @@ text-decoration: none;
   text-decoration: none;
   color: #ffffff;
   background-color:#82b3d3;
-  border: 0ch;
+  border: 0;
 }
 .button-in-favorite{
   font-family: "PT Sans", sans-serif;
@@ -298,12 +359,26 @@ text-decoration: none;
 
 }
 
+.pagination{
+  display: flex;
+}
+.pagination-link, .pagination-dots{
+  width: 60px;
+  padding: 11px;
+  margin: 8px;
+}
 .pagination-link, .pagination-current{
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   background-color:#82b3d3;
+  text-decoration: none;
+  text-align: center;
 }
 .pagination-current{
   color: #000000;
@@ -314,23 +389,45 @@ text-decoration: none;
   width: 400px;
 }
 .advantages-description, .service-description{
-padding: 85px;
+  padding: 85px;
 }
 
-.pagination{
+.advantages-list{
   display: flex;
+  flex-wrap: wrap;
 }
-.pagination-link, .pagination-dots{
-  width: 60px;
-  padding: 11px;
-  margin: 8px;
-}
-
-.social-info{
+.service-item-list{
   display: flex;
-}
+  flex-wrap: wrap;
+ }
 
 .field{
   width: 452px;
   padding:14px 20px ;
+}
+
+.proposal-background{
+  padding: 96px 304px;
+}
+
+.footer-container{
+display: flex;
+justify-content:space-between;
+}
+
+.footer-social-list{
+display: flex;
+}
+.contact-form{
+margin: 45px 0 35px;
+}
+.academy-logo{
+  margin: 48.5px 70px 36.5px;
+}
+.social-img{
+ margin: 56.5px 0 46.5px;
+}
+
+.social-info{
+  width: 300px;
 }
