@@ -71,8 +71,8 @@ body{
 
 }
 .navigation{
-  width: 1200;
-  display: flex;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
@@ -91,16 +91,33 @@ body{
   flex-wrap: wrap;
 }
 
-.navigation-item-user{
-  display: block;
-  min-width: 50px;
-  min-height: 22px;
-  padding: 20px;
-}
-
 .newsletter-form{
   display: flex;
+  flex-wrap: wrap;
+
 }
+.newsletter{
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/sign-form-backgroung.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 96px 258px 104px;
+  text-align: center;
+}
+
+.newsletter-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  }
+  .no-background{
+    background: none;
+    color: #000000;
+  }
 
 .field{
   font-family: "PT Sans", sans-serif;
@@ -131,6 +148,8 @@ body{
 }
 .navigation-link{
   display: block;
+  min-width: 50px;
+  min-height: 22px;
   padding: 20px;
 }
 
@@ -152,7 +171,7 @@ body{
   padding-bottom: 80px;
   margin-bottom: 69px;
 }
-.slogan, .proposal, .newsletter, .offer-title{
+.slogan, .proposal, .offer-title{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -165,7 +184,7 @@ margin-bottom: 25px;
   margin-bottom: 90px;
 }
 
-.reasons, .proposal-descpiption, .newsletter-description{
+.reasons, .proposal-descpiption{
   font-size: 22px;
   line-height: 26px;
 }
@@ -176,6 +195,8 @@ margin-bottom: 25px;
   text-transform: uppercase;
 }
 .color-dark{
+
+  display: flex;
   color: #ffffff;
   background-color: #82b3d3;
 }
@@ -188,15 +209,6 @@ margin-bottom: 25px;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.newsletter, .newsletter-description{
-  color: #ffffff;
-  }
-.newsteller-background{
-  background-color: #000000;
-  background-image: url("../images/sign-form-backgroung.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
 .contact-form{
   font-style: normal;
   font-weight: 400;
@@ -214,17 +226,17 @@ margin-bottom: 25px;
 .house{
   background-image: url("../images/svg/house.svg");
   background-repeat: no-repeat;
-  height: 70px;
-  width: 74px;
-
-  }
+  background-position: center;
+    }
 .food{
   background-image: url("../images/svg/food.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 .souvenir{
   background-image: url("../images/svg/gift.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-title{
@@ -260,16 +272,6 @@ text-decoration: none;
   text-align: right;
 }
 
-.newsteller-background, .no-background{
-  padding: 96px 258px 104px;
-}
-.no-background{
-  background: none;
-  text-align: center;
- }
- .black{
-  color: #000000;
- }
 .button-search, .button-sign{
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -365,29 +367,32 @@ text-decoration: none;
 
 .pagination{
   display: flex;
+  flex-wrap: nowrap;
 }
-.pagination-link, .pagination-dots{
-  width: 60px;
-  padding: 11px;
-  margin: 8px;
-  justify-content: center;
-}
-.pagination-link, .pagination-current{
+.pagination-link{
   width: 60px;
   height: 60px;
+  padding: 11px;
+  margin: 8px;
   border-radius: 4px;
-  display: flex;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   background-color:#82b3d3;
   text-decoration: none;
-  }
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .pagination-current{
   color: #000000;
   background-color:#f2f2f2;
-  justify-content: center;
+}
+.pagination-dots{
+  color: #000000;
+  background-color:#ffffff;
 }
 
 .service-item{
@@ -397,15 +402,13 @@ text-decoration: none;
 .advantages-item{
  width: 400px;
 }
-.advantages-sell{
-  display: flex;
-}
 
 .breadcrumbs{
   display: flex;
 }
 .catalog-filter{
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 }
 
@@ -443,7 +446,13 @@ justify-content:space-between;
 
 .footer-social-list{
 display: flex;
+flex-wrap: wrap;
 }
 .contact-form{
 margin: 45px 0 35px;
+}
+
+.hotel-list{
+  display: grid;
+  columns: 1fr 1fr 1fr;
 }
