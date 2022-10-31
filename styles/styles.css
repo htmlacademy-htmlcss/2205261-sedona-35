@@ -94,11 +94,14 @@ body{
 
 
 .navigation-user{
-  width: 368px;
+  max-width: 368px;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  padding: 14px 70px 14px 0;
 }
+
+
 
 .newsletter-form{
   display: flex;
@@ -119,6 +122,7 @@ body{
 }
 
 .newsletter-title{
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -162,6 +166,9 @@ body{
   min-height: 22px;
   padding: 20px;
 }
+.navigation-current{
+  border-bottom:1px solid #000000;
+  }
 
 .main-img{
   width: 458px;
@@ -180,6 +187,15 @@ body{
   padding-bottom: 80px;
   margin-bottom: 69px;
 }
+.decoration{
+
+  margin: 0;
+  background-image: url("../images/svg/decoration.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
 .slogan, .proposal, .offer-title{
   margin: 0;
   font-weight: 700;
@@ -207,7 +223,7 @@ body{
   text-transform: uppercase;
 }
 .advantages-title{
-  padding: 92px 112.5px 62px;
+  padding: 92px 113px 62px;
  }
  .service-title{
   padding:182px 85px 30px;
@@ -369,8 +385,8 @@ text-decoration: none;
   color: #ffffff;
   padding:8px 58px;
   border-radius: 4px;
-  background-color: #00000000;
-  outline: #00000000;
+  background-color: rgba(255, 255, 255, 0);
+  border: rgba(255, 255, 255, 0);
 }
 
 .button-desire{
@@ -388,12 +404,12 @@ text-decoration: none;
   background-color:#615048;
   outline: none;
 }
-.button-desire:link,
-.button-search:link,
-.button-more:link
+.button-desire:disabled,
+.button-search:disabled,
+.button-more:disabled
 {
   color: #ffffff;
-  background-color:#756157;
+  background-color:#e5e5e5;
 }
 
 .button-desire:active,
@@ -417,13 +433,13 @@ text-decoration: none;
   background-color:#68a2ca;
 }
 
-.button-sign:link,
-.button-apply:link,
-.button-favorite:link,
-.pagination-link:link
+.button-sign:disabled,
+.button-apply:disabled,
+.button-favorite:disabled,
+.pagination-link:disabled
 {
   color: #ffffff;
-  background-color:#82b3d3;
+  background-color:#e5e5e5;
 }
 
 
@@ -443,9 +459,9 @@ text-decoration: none;
   background-color:#6c9e42;
 }
 
-.button-in-favorite:link{
+.button-in-favorite:disabled{
   color: #ffffff;
-  background-color:#7db54f;
+  background-color:#e5e5e5;
 }
 
 .button-in-favorite:active{
@@ -460,13 +476,13 @@ text-decoration: none;
   text-transform: uppercase;
   background-color:#f2f2f2;
   border-radius: 4px;
-  padding:9px 22px 8px 23px;
+  padding:9px 22px;
 
 }
 
 .pagination{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .pagination-link{
   width: 60px;
@@ -561,6 +577,10 @@ justify-content: space-between;
 display: flex;
 flex-wrap: wrap;
 }
+
+.button-social{
+  margin-right: 26px;
+}
 .contact-form{
 margin: 45px 0 35px;
 }
@@ -583,12 +603,13 @@ margin: 45px 0 35px;
   display: grid;
   width: 340px;
   padding: 20px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
   grid-template-columns:140px 140px ;
   column-gap: 20px;
   row-gap: 16px;
-  outline-color: #e6e6e6;
-  outline-width: 1px;
+  border-color: #e6e6e6;
+  border-width: 1px;
+  border-radius: 4px;
 
 }
 .hotel-card-link{
@@ -596,15 +617,43 @@ margin: 45px 0 35px;
   grid-column-end: 3;
 }
 
-.hotel-type, .button-more, .stars{
-  grid-column: 1;
+
+.two-stars{
+  background-image:url("../images/svg/star.svg"), url("../images/svg/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0, 24px;
+}
+.three-stars{
+  background-image:url("../images/svg/star.svg"), url("../images/svg/star.svg"), url("../images/svg/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0, 24px, 48px;
 }
 
-.stars{
-  background-image:url("../images/svg/star.svg");
+.four-stars{
+  background-image:url("../images/svg/star.svg"), url("../images/svg/star.svg"), url("../images/svg/star.svg"), url("../images/svg/star.svg");
   background-repeat: no-repeat;
+  background-position: 0, 24px, 48px, 72px;
 }
 
 .offer{
   padding: 50px 70px 60px ;
+}
+
+.button-cells{
+  background-image:url("../images/svg/cells.svg");
+  background-repeat: no-repeat;
+}
+.button-view{
+  background-image:url("../images/svg/view.svg");
+}
+.button-list{
+  background-image:url("../images/svg/list.svg");
+}
+
+.find-hotel-view{
+display: flex;
+}
+
+.breadcrumbs-link::after{
+  background: url("../images/svg/arrow.svg") no-repeat;
 }
