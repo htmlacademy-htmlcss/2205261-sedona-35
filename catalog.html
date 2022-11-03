@@ -23,26 +23,29 @@
          </li>
        </ul>
        <ul class="navigation-user reset-ul">
-         <li class="navigation-item-user">
-           <a class="navigation-link" href="#">
-             <span class="visually-hidden">
-               Поиск
-             </span>
-           </a>
-         </li>
-         <li class="navigation-item-user">
-           <a class="navigation-link" href="#">
-             <span class="visually-hidden">
-               Избранное
-             </span>
-           </a>
-         </li>
-         <li class="navigation-item-user">
-           <a class="navigation-link button-desire" href="#">
-              Хочу сюда!
-           </a>
-         </li>
-        </ul>
+        <li class="navigation-item-user">
+          <a class="navigation-link icon" href="#">
+            <span class="visually-hidden">
+              Поиск
+            </span>
+            <svg class="navigation-item-user-svg" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/></svg>
+          </a>
+        </li>
+        <li class="navigation-item-user">
+          <a class="navigation-link icon" href="#">
+            <span class="visually-hidden">
+              Избранное
+            </span>
+            <svg class="navigation-item-user-svg" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
+            <span class="navigation-link-count">12</span>
+          </a>
+        </li>
+        <li class="navigation-item-user">
+          <a class="navigation-link button-desire" href="#">
+             Хочу сюда!
+          </a>
+        </li>
+      </ul>
      </nav>
    </header>
     <main class="main-catalog main-container">
@@ -118,12 +121,15 @@
           </select>
           <a class="button-cells" href="#">
             <span class="visually-hidden">Вид: ячейки</span>
+            <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
           </a>
           <a class="button-view" href="#">
             <span class="visually-hidden">Вид: крупный план</span>
+            <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/></svg>
           </a>
           <a class="button-list" href="#">
             <span class="visually-hidden">Вид: список</span>
+            <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/></svg>
           </a>
         </div>
         <ul class="hotel-list reset-ul">
@@ -200,8 +206,8 @@
         </ul>
       </section>
       <section class="newsletter no-background">
-        <h2 class="newsletter-title">Рассылка</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" method="post" action="https://echo.htmlacademy.ru/">
           <label class="visually-hidden" for="newsletter">E-mail</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter" required>
