@@ -606,10 +606,7 @@ justify-content: space-between;
   min-height: 384px;
  }
 
-.field{
-  width: 452px;
-  padding:14px 20px ;
-}
+
 
 .proposal-background{
   margin: 0;
@@ -776,56 +773,127 @@ justify-content: space-between;
   color: #000000;
   text-transform: uppercase;
 }
-.in-name{
+.in-name, .out-name, .adult-name, .child-name {
   font-weight: 700;
+  padding: 14px 0;
   margin-right: 24px;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .out-name{
-  font-weight: 700;
   margin-right: 19px;
-}
-
+ }
 .adult-name{
-  font-weight: 700;
   margin-right: 46px;
 }
 .child-name{
-  font-weight: 700;
   margin-right: 82px;
+}
+
+.calendar{
+  background-color:#f2f2f2;
+  border: none;
+  }
+  .calendar:hover path,
+.calendar:focus path {
+  fill: #756157;
+}
+
+.calendar:active path {
+  fill: #83b3d3;
 }
 
 .field{
 
-  border-radius: 4px;
+  padding:14px 20px;
   border: none;
-  width: 446px;
-  background-image: url("../images/svg/calendar.svg") no-repeat;
-  background-position: right;
+  width: 100%;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
   background-color: #f2f2f2;
 
 }
 
+.field:hover{
+  background-color: #e6e6e6;
+  border: none;
 
-.field-group{
+}
+.field:focus{
+  border-color: #82b3d3;
+}
+.together-block{
+  display:flex;
+}
+
+.in-group, .out-group{
+  display: flex;
   margin: 0;
   margin-bottom: 4px;
+  margin-top: 23px;
 }
+
+.count{
+  display: flex;
+}
+
 .field-mini{
-  width:111px ;
+ padding: 0;
+ width: 30px;
+ text-align: center;
 }
+.btn-less{
+  padding:9px 14px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.btn-more{
+padding:4px 14px;
+background-color: #f2f2f2;
+border: none;
+  }
+  .btn-less {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .btn-more {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .btn-less:hover path,
+  .btn-more:hover path,
+  .btn-less:focus path,
+  .btn-more:focus path {
+    fill: #000000;
+    fill-opacity: 1;
+  }
+
+  .btn-less:focus svg,
+  .btn-more:focus svg {
+    outline: 3px solid #82b3d3;
+    border-radius: 4px;
+  }
+
+  .btn-less:active path,
+  .btn-more:active path {
+    fill-opacity: 0.2;
+  }
+
+
 .mini-form{
   display: flex;
   justify-content: space-between;
+  margin-top: 23px;
+  margin-bottom:48px ;
 }
 
 .form-notify{
   font-size: 16px;
   line-height: 21px;
-margin: 0;
-text-align: center;
-margin-bottom: 23px;
-
+  margin: 0 0 23px 147px;
 }
 
 .bad-notify{
