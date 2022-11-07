@@ -135,14 +135,7 @@ body{
     color: #000000;
   }
 
-.field{
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
-}
+
 
   .select-control{
   font-family: "PT Sans", sans-serif;
@@ -183,7 +176,7 @@ body{
 }
 
 .icon{
-  padding: 10px 20px
+  padding: 10px 20px;
 }
 
 .navigation-link-count {
@@ -429,8 +422,8 @@ text-decoration: none;
   color: #ffffff;
   padding:8px 58px;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0);
-  border: rgba(255, 255, 255, 0);
+  background-color:transparent;
+  border: transparent;
 }
 
 .button-desire{
@@ -710,7 +703,7 @@ flex-wrap: wrap;
   padding: 50px 70px 60px ;
 }
 
- .find-hotev-view{
+ .find-hotel-view{
 display: flex;
 justify-content: space-between;
 }
@@ -758,11 +751,31 @@ justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 50%;
   border: none;
-  background-image: url("../images/svg/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
+
+.modal-close-button:hover{
+background-color: #e6e6e6;
+}
+.modal-close-button:focus{
+  background-color: #e6e6e6;
+  outline-color: #83b3d3;
+}
+.modal-close-button:active{
+  background-color: #e6e6e6;
+  color: rgba(128, 128, 128, 0.2);
+}
+
+.close-form{
+  padding-top: 3px;
+  padding-left: 1px;
+}
+.close-form:active path{
+fill-opacity: 0.3;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -792,9 +805,15 @@ justify-content: space-between;
 }
 
 .calendar{
-  background-color:#f2f2f2;
+  position: absolute;
+  background-color:transparent;
   border: none;
+  padding: 0;
+  right: 22px;
+  top:16px;
   }
+
+
   .calendar:hover path,
 .calendar:focus path {
   fill: #756157;
@@ -805,6 +824,15 @@ justify-content: space-between;
 }
 
 .field{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.field{
 
   padding:14px 20px;
   border: none;
@@ -812,6 +840,7 @@ justify-content: space-between;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
   background-color: #f2f2f2;
+  border-radius: 4px;
 
 }
 
@@ -821,13 +850,17 @@ justify-content: space-between;
 
 }
 .field:focus{
-  border-color: #82b3d3;
+  outline-color: #82b3d3;
+
 }
-.together-block{
-  display:flex;
+
+.field:active{
+  outline-color: #000000;
+  color: #000000;
 }
 
 .in-group, .out-group{
+  position: relative;
   display: flex;
   margin: 0;
   margin-bottom: 4px;
