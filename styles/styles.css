@@ -201,7 +201,7 @@ body{
   background-color: #7db54f;
   position: absolute;
   top: 0;
-  right: 9px;
+  right: 3px;
   display: block;
   width: 20px;
   height: 20px;
@@ -664,7 +664,7 @@ display: flex;
 flex-wrap: wrap;
 }
 
-.button-social:link .social-img{
+.button-social .social-img{
   color: #83B3D3;
 }
 
@@ -677,7 +677,7 @@ flex-wrap: wrap;
 .button-social:active .social-img {
   color: rgba(104, 162, 202, 0.3);
 }
-.htmlacademy-link:link .academy-logo{
+.htmlacademy-link .academy-logo{
   color: #000000;
 }
 .contact-form:hover,
